@@ -5,7 +5,7 @@
 
 ---
 
-## 📋 Tabla de Contenidos
+## Tabla de Contenidos
 
 - [El Problema](#-el-problema)
 - [La Solución](#-la-solución)
@@ -13,14 +13,6 @@
 - [Flujo de Trabajo](#-flujo-de-trabajo)
 - [Contexto Ecuador](#-contexto-ecuador--por-qué-aquí)
 - [Stack Tecnológico](#-stack-tecnológico)
-- [Estructura del Proyecto](#-estructura-del-proyecto)
-- [Instalación y Configuración](#-instalación-y-configuración)
-- [Configurar Notion](#-configurar-notion)
-- [Uso de la API](#-uso-de-la-api)
-- [Datos de Prueba (Demo)](#-datos-de-prueba-demo)
-- [Roadmap Enterprise](#-roadmap-enterprise)
-- [Marco Legal Ecuador](#-marco-legal-ecuador)
-- [Equipo](#-equipo)
 
 ---
 
