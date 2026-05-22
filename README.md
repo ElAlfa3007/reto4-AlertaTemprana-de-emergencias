@@ -1,4 +1,4 @@
-# 🚨 AlertaEC — Sistema de Alerta Temprana de Ingresos a Emergencias
+# AlertaEC — Sistema de Alerta Temprana de Ingresos a Emergencias
 
 > **hackIAthon Viamatica 2025 · Reto 4**  
 > Agente IA que valida cobertura de seguros en tiempo real cuando un paciente ingresa a urgencias — notificando simultáneamente al hospital y a la aseguradora en menos de 5 segundos.
