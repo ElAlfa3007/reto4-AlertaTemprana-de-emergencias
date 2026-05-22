@@ -7,12 +7,12 @@
 
 ## Tabla de Contenidos
 
-- [El Problema](el-problema)
-- [La Solución](la-solución)
-- [Arquitectura del Sistema](arquitectura-del-sistema)
-- [Flujo de Trabajo](flujo-de-trabajo)
-- [Contexto Ecuador](contexto-ecuador--por-qué-aquí)
-- [Stack Tecnológico](stack-tecnológico)
+- [El Problema](-el-problema)
+- [La Solución](-la-solución)
+- [Arquitectura del Sistema](-arquitectura-del-sistema)
+- [Flujo de Trabajo](-flujo-de-trabajo)
+- [Contexto Ecuador](-contexto-ecuador--por-qué-aquí)
+- [Stack Tecnológico](-stack-tecnológico)
 
 ---
 
