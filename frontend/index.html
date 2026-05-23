@@ -15,7 +15,7 @@
   <aside class="sidebar">
     <div class="sidebar-header">
       <div class="logo">
-        <div class="logo-icon"></div>
+        <div class="logo-icon"><i class="ph ph-heartbeat"></i></div>
         <span class="logo-text">AlertaEC</span>
       </div>
       <div class="logo-sub">hackIAthon · Viamatica · Reto 4</div>
@@ -23,14 +23,14 @@
     <nav class="sidebar-nav">
       <div class="nav-label">Sistema</div>
       <button class="nav-btn active" onclick="showPage('admision')">
-        <span class="nav-icon"></span> Admisión de Emergencia
+        <span class="nav-icon"><i class="ph ph-first-aid-kit"></i></span> Admisión de Emergencia
       </button>
       <button class="nav-btn" onclick="showPage('dashboard')">
-        <span class="nav-icon"></span> Dashboard en Vivo
+        <span class="nav-icon"><i class="ph ph-chart-line-up"></i></span> Dashboard en Vivo
       </button>
       <div class="nav-label">Documentación</div>
       <button class="nav-btn" onclick="showPage('api')">
-        <span class="nav-icon"></span> API Reference
+        <span class="nav-icon"><i class="ph ph-code"></i></span> API Reference
       </button>
     </nav>
     <div class="sidebar-footer">
@@ -49,7 +49,7 @@
       </div>
 
       <div class="form-card">
-        <div class="form-card-title"> Datos del Paciente</div>
+        <div class="form-card-title"><i class="ph ph-user"></i> Datos del Paciente</div>
         <div class="form-grid">
           <div class="form-group">
             <label class="form-label">Cédula de Identidad *</label>
@@ -86,7 +86,7 @@
       </div>
 
       <div class="form-card">
-        <div class="form-card-title"> Datos de la Emergencia</div>
+        <div class="form-card-title"><i class="ph ph-stethoscope"></i> Datos de la Emergencia</div>
         <div class="form-grid">
           <div class="form-group">
             <label class="form-label">Tipo de Emergencia *</label>
@@ -112,7 +112,7 @@
           <div class="form-group full">
             <label class="checkbox-row">
               <input type="checkbox" id="soat">
-               Accidente de tránsito — verificar cobertura SOAT (ANT Ecuador) antes del seguro privado
+                <i class="ph ph-car"></i> Accidente de tránsito — verificar cobertura SOAT (ANT Ecuador) antes del seguro privado
             </label>
           </div>
         </div>
@@ -157,7 +157,7 @@
         <div class="page-subtitle">Endpoints disponibles para integración con sistemas hospitalarios</div>
       </div>
       <div class="form-card">
-        <div class="form-card-title"> POST /api/webhook/admision</div>
+        <div class="form-card-title"><i class="ph ph-terminal-window"></i> POST /api/webhook/admision</div>
         <div style="background:var(--surface2);border-radius:10px;padding:16px;font-family:var(--mono);font-size:12px;color:var(--accent);line-height:1.8;overflow-x:auto">
 <pre>{
   "cedula_paciente": "1723456784",
