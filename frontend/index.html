@@ -18,16 +18,13 @@
   --border: #E2E8F0;
   --border-accent: rgba(124, 185, 232, 0.4);
   
-  /* Textos con alto contraste pero amigables */
   --text: #1E293B; /* Azul oscuro casi negro para texto principal */
   --muted: #64748B; /* Gris azulado para texto secundario */
-  
-  /* Tonos pasteles vibrantes médicos (Acentos) */
+
   --accent: #7CB9E8; /* Azul pastel vibrante (Confianza/Salud) */
   --accent-hover: #5A9BD5;
   --accent2: #AEC6CF; /* Azul grisáceo suave */
   
-  /* Estados (Versiones pastel vibrantes) */
   --green: #4ADE80; /* Menta vibrante (Confirmado/Éxito) */
   --green-bg: #DCFCE7;
   
@@ -40,7 +37,6 @@
   --gray: #94A3B8; /* Gris (Sin Cobertura) */
   --gray-bg: #F1F5F9;
 
-  /* Fuentes actualizadas */
   --font: 'Nunito', sans-serif;
   --mono: 'JetBrains Mono', monospace;
 }
@@ -55,7 +51,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Opcional: Textura sutil o gradiente de fondo en lugar de grid noise para limpieza */
 body::before {
   content: '';
   position: fixed;
@@ -678,7 +673,7 @@ body::before {
 }
 
 .required {
-  color: var(--red); /* Usa el rojo vibrante que ya definimos */
+  color: var(--red);
   font-weight: 800;
   margin-left: 2px;
 }
