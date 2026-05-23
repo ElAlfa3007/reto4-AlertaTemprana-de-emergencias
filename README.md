@@ -13,6 +13,7 @@
 - [Flujo de Trabajo](#flujo-de-trabajo)
 - [Contexto Ecuador](#contexto-ecuador--por-qué-aquí)
 - [Stack Tecnológico](#stack-tecnológico)
+- [Configuración e Instalación Local](#configuración_e_instalación_local)
 
 ---
 
@@ -145,6 +146,74 @@ En paralelo se envían:
 
 ---
 
+## Configuración e Instalación Local
+
+Sigue estos pasos para clonar el proyecto, configurar las variables de entorno y ejecutar el agente de Alerta Temprana en tu máquina.
+
+### Prerrequisitos
+* Python 3.11.x.
+* Una cuenta en [Anthropic](https://console.anthropic.com/) (para el modelo de IA).
+* Una cuenta en [Notion](https://www.notion.so/my-integrations) (con acceso a las bases de datos integradas).
+* Una cuenta en [Twilio](https://www.twilio.com/) y [SendGrid](https://sendgrid.com/) para los módulos de alertas.
+
+---
+
+### Paso 1: Clonar el repositorio y preparar el entorno
+
+Abre tu terminal y ejecuta los siguientes comandos:
+
+```bash
+# 1. Clonar el repositorio
+git clone [https://github.com/ElAlfa3007/reto4-AlertaTemprana-de-emergencias.git](https://github.com/ElAlfa3007/reto4-AlertaTemprana-de-emergencias.git)
+
+# 2. Entrar al directorio del proyecto
+cd reto4-AlertaTemprana-de-emergencias
+
+# 3. Crear un entorno virtual (Recomendado)
+python -m venv venv
+
+# 4. Activar el entorno virtual
+# En Windows:
+venv\Scripts\activate
+# En Linux/macOS:
+source venv/bin/activate
+
+# 5. Instalar las dependencias del proyecto
+pip install -r requirements.txt
+```
+### Paso 2: Crear y configurar el archivo de variables de entorno (`.env`)
+
+El proyecto utiliza variables de entorno para gestionar las credenciales de servicios externos de forma segura. 
+
+1. En la raíz del proyecto, crea un archivo de texto plano y llámalo exactamente **`.env`** (debe empezar con un punto y no llevar extensión `.txt`).
+2. Copia la siguiente estructura exacta dentro del archivo. 
+3. Rellena tus claves privadas en los campos que están vacíos (`ANTHROPIC_API_KEY`, `NOTION_TOKEN`, `TWILIO_ACCOUNT_SID`, `TWILIO_AUTH_TOKEN` y `SENDGRID_API_KEY`). Los identificadores de las bases de datos, el teléfono de origen y el correo remitente **ya están configurados por defecto** y no necesitan modificarse.
+
+```env
+# --- Configuración del Modelo de IA ---
+ANTHROPIC_API_KEY=tu_clave_de_anthropic_aqui
+
+# --- Integración con Notion ---
+NOTION_TOKEN=tu_token_secreto_de_notion_aqui
+
+# Identificadores fijos de las Bases de Datos del Reto
+NOTION_POLIZAS_DB=7c1cd9afa42342549530a79a2b238bec
+NOTION_CASOS_DB=0f7798f0d6a9413f95f087267652f12f
+NOTION_PREEXISTENCIAS_DB=03c447e9d67c4cd1a268e111ef08c694
+
+# --- Módulo de Notificaciones (Alertas) ---
+TWILIO_ACCOUNT_SID=tu_account_sid_de_twilio_aqui
+TWILIO_AUTH_TOKEN=tu_auth_token_de_twilio_aqui
+TWILIO_PHONE_FROM=+19129142159
+
+SENDGRID_API_KEY=tu_api_key_de_sendgrid_aqui
+EMAIL_FROM=alertaec@r4viamatica.com
+
+# --- Configuración del Entorno ---
+ENVIRONMENT=production
+```
+
+---
 ## 🇪🇨 Contexto Ecuador — Por qué aquí
 
 ### Regulación aplicada
