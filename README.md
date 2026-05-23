@@ -13,7 +13,7 @@
 - [Flujo de Trabajo](#flujo-de-trabajo)
 - [Contexto Ecuador](#contexto-ecuador--por-qué-aquí)
 - [Stack Tecnológico](#stack-tecnológico)
-- [Configuración e Instalación Local](#configuración_e_instalación_local)
+- [Configuración e Instalación Local](#configuracion_e_instalacion_local)
 
 ---
 
