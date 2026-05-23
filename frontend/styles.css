@@ -669,6 +669,12 @@ body::before {
   transform: translateY(-1px);
 }
 
+.required {
+  color: var(--red); /* Usa el rojo vibrante que ya definimos */
+  font-weight: 800;
+  margin-left: 2px;
+}
+
 @media(max-width:768px){
   .layout { grid-template-columns: 1fr; }
   .sidebar { display: none; }

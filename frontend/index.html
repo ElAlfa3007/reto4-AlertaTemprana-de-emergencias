@@ -52,7 +52,7 @@
         <div class="form-card-title"><i class="ph ph-user"></i> Datos del Paciente</div>
         <div class="form-grid">
           <div class="form-group">
-            <label class="form-label">Cédula de Identidad *</label>
+            <label class="form-label">Cédula de Identidad <span class="required">*</span></label>
             <input class="form-input" id="cedula" type="text" placeholder="1723456784" maxlength="10">
             <div class="demo-cedulas">
               <span class="demo-pill" onclick="setDemo('1723456784','Juan Carlos Andrade Mejía')">1723456784 Premium</span>
@@ -61,11 +61,11 @@
             </div>
           </div>
           <div class="form-group">
-            <label class="form-label">Nombre Completo *</label>
+            <label class="form-label">Nombre Completo <span class="required">*</span></label>
             <input class="form-input" id="nombre" type="text" placeholder="Apellidos Nombres">
           </div>
           <div class="form-group">
-            <label class="form-label">Hospital *</label>
+            <label class="form-label">Hospital <span class="required">*</span></label>
             <select class="form-select" id="hospital">
               <option value="H001">Clínica Kennedy — Guayaquil</option>
               <option value="H002">Hospital Metropolitano — Quito</option>
@@ -75,11 +75,11 @@
             </select>
           </div>
           <div class="form-group">
-            <label class="form-label">Médico de Admisión *</label>
+            <label class="form-label">Médico de Admisión <span class="required">*</span></label>
             <input class="form-input" id="medico" type="text" placeholder="Dr. / Dra. Nombres Apellidos" value="Dr. Andrés Moncayo">
           </div>
           <div class="form-group">
-            <label class="form-label">Email del Médico</label>
+            <label class="form-label">Email del Médico <span class="required">*</span></label>
             <input class="form-input" id="email_medico" type="email" placeholder="medico@hospital.ec">
           </div>
         </div>
@@ -89,7 +89,7 @@
         <div class="form-card-title"><i class="ph ph-stethoscope"></i> Datos de la Emergencia</div>
         <div class="form-grid">
           <div class="form-group">
-            <label class="form-label">Tipo de Emergencia *</label>
+            <label class="form-label">Tipo de Emergencia <span class="required">*</span></label>
             <select class="form-select" id="tipo">
               <option value="TRAUMA">Trauma / Lesiones</option>
               <option value="CARDIOVASCULAR">Cardiovascular</option>
@@ -106,7 +106,7 @@
             <input class="form-input" id="cie10" type="text" placeholder="Ej: S06.0, I21.0, J18.9">
           </div>
           <div class="form-group full">
-            <label class="form-label">Motivo de Ingreso (descripción clínica) *</label>
+            <label class="form-label">Motivo de Ingreso (descripción clínica) <span class="required">*</span></label>
             <textarea class="form-textarea" id="motivo" placeholder="Describa los síntomas, circunstancias y motivo de la consulta de emergencia..."></textarea>
           </div>
           <div class="form-group full">
