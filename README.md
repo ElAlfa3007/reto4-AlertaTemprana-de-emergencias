@@ -14,6 +14,7 @@
 - [Configuración e Instalación Local](#configuración-e-instalación-local)
 - [Contexto Ecuador](#-contexto-ecuador--por-qué-aquí)
 - [Stack Tecnológico](#stack-tecnológico)
+- [Agente](#agente-subido)
 
 
 ---
@@ -220,10 +221,6 @@ Una vez que el archivo `.env` esté correctamente configurado con tus credencial
 1. **Iniciar la aplicación:**
    Ejecuta el comando principal según la interfaz que implemente tu proyecto:
    ```bash
-   # Si el proyecto utiliza una interfaz gráfica de Streamlit:
-   streamlit run app.py
-
-   # Si el proyecto se ejecuta directamente como un servicio de backend:
    python main.py
    ```
 ---
@@ -269,7 +266,8 @@ El sistema implementa el **algoritmo oficial de verificación de cédulas** del 
 
 ---
 
-
+## Agente Subido
+[Agente en OnRender](https://reto4-alertatemprana-de-emergencias.onrender.com)
 
 <div align="center">
 
