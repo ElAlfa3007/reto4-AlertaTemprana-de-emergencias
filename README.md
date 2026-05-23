@@ -212,7 +212,19 @@ EMAIL_FROM=alertaec@r4viamatica.com
 # --- Configuración del Entorno ---
 ENVIRONMENT=production
 ```
+### Paso 3: Ejecución y Verificación del Sistema
 
+Una vez que el archivo `.env` esté correctamente configurado con tus credenciales, puedes iniciar el agente localmente.
+
+1. **Iniciar la aplicación:**
+   Ejecuta el comando principal según la interfaz que implemente tu proyecto:
+   ```bash
+   # Si el proyecto utiliza una interfaz gráfica de Streamlit:
+   streamlit run app.py
+
+   # Si el proyecto se ejecuta directamente como un servicio de backend:
+   python main.py
+   ```
 ---
 ## 🇪🇨 Contexto Ecuador — Por qué aquí
 
