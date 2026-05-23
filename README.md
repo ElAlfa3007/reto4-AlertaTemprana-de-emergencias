@@ -12,7 +12,7 @@
 - [Arquitectura del Sistema](#arquitectura-del-sistema)
 - [Flujo de Trabajo](#flujo-de-trabajo)
 - [Configuración e Instalación Local](#configuración-e-instalación-local)
-- [Contexto Ecuador](#contexto-ecuador--por-qué-aquí)
+- [Contexto Ecuador](#-contexto-ecuador--por-qué-aquí)
 - [Stack Tecnológico](#stack-tecnológico)
 
 
