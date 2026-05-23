@@ -10,7 +10,7 @@ load_dotenv()
 
 # ── Anthropic ────────────────────────────────────────────────────────────────
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
-CLAUDE_MODEL = "claude-sonnet-4-20250514"
+CLAUDE_MODEL = "claude-3-5-sonnet-20241022"
 
 # ── Notion ───────────────────────────────────────────────────────────────────
 NOTION_TOKEN = os.getenv("NOTION_TOKEN", "")
