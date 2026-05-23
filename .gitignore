@@ -1,0 +1,29 @@
+# Variables de entorno - NUNCA subir al repositorio
+.env
+backend/.env
+
+# Entorno virtual Python
+venv/
+.venv/
+env/
+backend/venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
