@@ -14,18 +14,7 @@ from config import ANTHROPIC_API_KEY, CLAUDE_MODEL, SCORE_AUTO_APROBAR, SCORE_RE
 
 client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 
-
-SYSTEM_PROMPT = """Eres un agente especializado en análisis de cobertura de seguros médicos en Ecuador.
-Tu función es analizar en tiempo real si un paciente que ingresa a urgencias tiene cobertura válida
-y qué acciones deben tomar el hospital y la aseguradora.
-
-CONTEXTO REGULATORIO ECUADOR:
-- Las pólizas en Ecuador se rigen por la Ley General de Seguros y la regulación de la SBS
-- El SOAT (Seguro Obligatorio de Accidentes de Tránsito) es gestionado por la ANT y cubre hasta $5,000
-- En accidentes de tránsito, el SOAT se activa PRIMERO antes del seguro privado
-- La moneda es USD (dólar americano)
-- Los códigos diagnósticos siguen el sistema CIE-10 en español
-
+"""
 REGLAS DE DECISIÓN:
 - Score 0-30: Cobertura CONFIRMADA → hospital puede proceder con atención completa
 - Score 31-70: EN REVISIÓN → hospital procede con atención básica urgente, gestor revisa en <1 hora
@@ -36,7 +25,6 @@ IMPORTANTE:
 - Analiza si hay posible relación entre el motivo de emergencia y pre-existencias declaradas
 - En caso de accidente de tránsito, SIEMPRE recomendar activar SOAT primero
 - Responde ÚNICAMENTE con el JSON estructurado solicitado, sin texto adicional"""
-
 
 async def analizar_emergencia(
     admision: AdmisionEmergencia,
